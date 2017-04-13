@@ -44,6 +44,3 @@ cd Co-Op-Management-System
 * Hrishikesh Hiraskar (Mentor) 
 * Vanshika Gupta (Team Member)
 * Sujith D Dixith (Team Member)
-
-## License
-- The software is registered under the [MIT License](https://github.com/salman-bhai/Co-Op-Management-System/blob/master/LICENSE)
