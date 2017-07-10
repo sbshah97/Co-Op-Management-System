@@ -15,17 +15,33 @@
 
           <link rel="icon" href="C:\Users\laptop\Desktop\website\favicon.ico" type="image/x-icon" />
           <link rel="shortcut icon" href="C:\Users\laptop\Desktop\website\favicon.ico" type="image/x-icon" />
+          <style>
+            header, main, footer {
+                padding-left: 240px;
+               }
 
+           @media only screen and (max-width : 992px) {
+           header, main, footer {
+                padding-left: 0;
+               }
+            }
+          </style>
 
 </head>
 <body id="back"> 
 
 <!-- header  -->
-
-  <div class="navbar-fixed teal darken-3">
-    <nav class="teal darken-3" style="height:10%">
-      <div class="nav-wrapper">
-        <ul class="hide-on-med-and-down right">
+<header>
+  <div class="navbar-fixed bg">
+    <nav class="bg" style="height:10%">
+      <form class="form2">
+          <div class="input-field center">
+          <input id="search" type="search" required>
+          <label class="label-icon" for="search">Search products here</label>
+          <i class="material-icons">close</i>
+          </div>
+        </form>
+        <ul class="hide-on-med-and-down">
           <li><a href="createacc.html">Create Account</a></li>
           <li><a href="signin.html">Sign In</a></li>
           <li style="padding:10px"><a href="shop.html" class="btn waves-effect waves-teal left">CART<i class="material-icons">shopping_cart</i></a></li>
@@ -35,32 +51,25 @@
           <li><a href="signin.html">Sign In</a></li>
           <li style="padding:10px"><a href="shop.html" class="btn waves-effect waves-teal">Cart<i class="material-icons">shopping_cart</i></a></li>
         </ul>
-        <form class="form2 right">
-          <div class="input-field">
-          <input id="search" type="search" required>
-          <label class="label-icon" for="search">Search for products here</label>
-          <i class="material-icons">close</i>
-          </div>
-        </form>
-      </div>     
     </nav>
   </div>
   <script>
     $( document ).ready(function(){})
   </script>
+</header>
 
-
-        
-  <div class="navbar teal darken-3">
-    <div class="z-depth-4 div1 top-nav nav-wrapper teal darken-3">
+    
+<header>
+  <div class="navbar bg">
+    <div class="z-depth-4 div1 top-nav nav-wrapper bg">
       <div class="row">
-        <div class="col m8 s12">
-          <h3 align="center">Categories</h3>
+        <div class="col m8 s12 bg">
+          <h3>Categories</h3>
         </div>
       </div>
     </div>
   </div>
-
+</header>
   <!-- ////header -->
 
 <!-- side nav menu -->
@@ -70,7 +79,7 @@
 	    <li class="white">
          <div class="userView">
          <div class="background">
-           <img src="C:\Users\laptop\Desktop\website\images\nitkl.jpg" width="100%">
+           <img src="images\nitkl.jpg" width="100%">
          </div>
          </div>
       </li>
@@ -112,7 +121,7 @@
                 </div>
               </li>
   <br>
-			        <li class="bold z-depth-1"><a coll class="collapsible-header  waves-effect waves-teal"><b>B o d y &nbspP r o d u c t s</b></a>
+			        <li class="bold z-depth-1"><a class="collapsible-header coll waves-effect waves-teal"><b>B o d y &nbspP r o d u c t s</b></a>
                 <div class="collapsible-body">
                 <ul>
                   <li><a href="chip.html">&nbsp Faceitems</a></li>
@@ -138,12 +147,12 @@
 
 <main><div class="container">
 
-  <div class="row cardd">
+  <div class="row card">
       
       <div class="col m3 s12">
 
           <a href="eat-chips.html"><div class="card small">
-            <img src="C:\Users\laptop\Desktop\website\images\nitkf.jpg" height="60%" width="100%">
+            <img src="images\nitkf.jpg" height="60%" width="100%">
           <div class="card-content center">
             <h6>E A T A B L E S </h6>  
           </div>
@@ -153,22 +162,23 @@
 
       <div class="col m3 s12">
        
-          <h4>Eatables</h4><br>
-            <ul>
-                  <li><a href="chip.html">&nbsp Chips</a></li>
-                  <li><a href="tc.html">&nbsp Chocolates</a></li>
-                  <li><a href="snack.html">&nbsp Daily Snacks</a></li>
-                  <li><a href="bisc.html">&nbsp Biscuits</a></li>
-                  <li><a href="ration.html">&nbsp Ration</a></li>
-                  <li><a href="pack.html">&nbsp Packed Stuff</a></li>
-                  <li><a href="other.html">&nbsp others</a></li>
-            </ul>
+            <table class="striped highlight" style="line-height:10px;font-size:15px">
+                  <tr><td><h5>Eatables</h5></td></tr>
+                  <tr><td><a href="chip.html">&nbsp Chips</a></td></tr>
+                  <tr><td><a href="tc.html">&nbsp Chocolates</a></td></tr>
+                  <tr><td><a href="snack.html">&nbsp Daily Snacks</a></td></tr>
+                  <tr><td><a href="bisc.html">&nbsp Biscuits</a></td></tr>
+                  <tr><td><a href="ration.html">&nbsp Ration</a></td></tr>
+                  <tr><td><a href="pack.html">&nbsp Packed Stuff</a></td></tr>
+                  <tr><td><a href="other.html">&nbsp others</a></td></tr>
+            </table>
+         
       </div>
     
       <div class="col m3 s12">
 
           <a href="eat-chips.html"><div class="card small">
-            <img src="C:\Users\laptop\Desktop\website\images\nitkd.jpg" height="60%" width="100%">
+            <img src="images\nitkd.jpg" height="60%" width="100%">
           <div class="card-content center">
             <h6>D O M E S T I C<br> P R O D U C T S </h6>  
           </div>
@@ -178,28 +188,29 @@
 
       <div class="col m3 s12">
        
-          <h4>Domestic Products</h4><br>
-            <ul>
-                  <li><a href="chip.html">&nbsp Chips</a></li>
-                  <li><a href="tc.html">&nbsp Chocolates</a></li>
-                  <li><a href="snack.html">&nbsp Daily Snacks</a></li>
-                  <li><a href="bisc.html">&nbsp Biscuits</a></li>
-                  <li><a href="ration.html">&nbsp Ration</a></li>
-                  <li><a href="pack.html">&nbsp Packed Stuff</a></li>
-                  <li><a href="other.html">&nbsp others</a></li>
-            </ul>
+            <table class="striped highlight" style="line-height:10px">
+                  <tr><td><h5>Domestic Products</h5></td></tr>
+                  <tr><td><a href="chip.html">&nbsp Chips</a></td></tr>
+                  <tr><td><a href="tc.html">&nbsp Chocolates</a></td></tr>
+                  <tr><td><a href="snack.html">&nbsp Daily Snacks</a></td></tr>
+                  <tr><td><a href="bisc.html">&nbsp Biscuits</a></td></tr>
+                  <tr><td><a href="ration.html">&nbsp Ration</a></td></tr>
+                  <tr><td><a href="pack.html">&nbsp Packed Stuff</a></td></tr>
+                  <tr><td><a href="other.html">&nbsp others</a></td></tr>
+            </table>
+
       </div>
-  </div>
+  </div><br>
 
 
-  <div class="row cardd">
+  <div class="row card">
       
 
       <div class="col m3 s12">
 
           <a href="eat-chips.html"><div class="card small">
-            <img src="C:\Users\laptop\Desktop\website\images\nitks.jpg" height="60%" width="100%">
-          <div class="card-content">
+            <img src="images\nitks.jpg" height="60%" width="100%">
+          <div class="card-content center">
             <h6>S T A T I O N A R Y<br> I T E M S</h6>  
           </div>
           </div></a>
@@ -208,23 +219,24 @@
 
       <div class="col m3 s12">
        
-          <h4>Stationary Items</h4><br>
-            <ul>
-                  <li><a href="chip.html">&nbsp Chips</a></li>
-                  <li><a href="tc.html">&nbsp Chocolates</a></li>
-                  <li><a href="snack.html">&nbsp Daily Snacks</a></li>
-                  <li><a href="bisc.html">&nbsp Biscuits</a></li>
-                  <li><a href="ration.html">&nbsp Ration</a></li>
-                  <li><a href="pack.html">&nbsp Packed Stuff</a></li>
-                  <li><a href="other.html">&nbsp others</a></li>
-            </ul>
+         <table class="striped highlight" style="line-height:10px">
+                  <tr><td><h5>Stationary Items</h5></td></tr>
+                  <tr><td><a href="chip.html">&nbsp Chips</a></td></tr>
+                  <tr><td><a href="tc.html">&nbsp Chocolates</a></td></tr>
+                  <tr><td><a href="snack.html">&nbsp Daily Snacks</a></td></tr>
+                  <tr><td><a href="bisc.html">&nbsp Biscuits</a></td></tr>
+                  <tr><td><a href="ration.html">&nbsp Ration</a></td></tr>
+                  <tr><td><a href="pack.html">&nbsp Packed Stuff</a></td></tr>
+                  <tr><td><a href="other.html">&nbsp others</a></td></tr>
+            </table>
+
       </div>
     
       <div class="col m3 s12">
 
           <a href="eat-chips.html"><div class="card small">
-            <img src="C:\Users\laptop\Desktop\website\images\nitkb.jpg" height="60%" width="100%">
-          <div class="card-content">
+            <img src="images\nitkb.jpg" height="60%" width="100%">
+          <div class="card-content center">
             <h6>B O D Y<br> P R O D U C T S </h6>  
           </div>
           </div></a>
@@ -233,26 +245,27 @@
 
       <div class="col m3 s12">
        
-          <h4>Body Products</h4><br>
-            <ul>
-                  <li><a href="chip.html">&nbsp Faceitems</a></li>
-                  <li><a href="tc.html">&nbsp Creams & Lotions</a></li>
-                  <li><a href="snack.html">&nbsp Hairitems</a></li>
-                  <li><a href="snack.html">&nbsp Oils </a></li>
-                  <li><a href="snack.html">&nbsp Body washs' </a></li>
-                  <li><a href="snack.html">&nbsp Perfumes & talc </a></li>
-                  <li><a href="snack.html">&nbsp Oils </a></li>
-                  <li><a href="snack.html">&nbsp accessories & others </a></li>     
-            </ul>
+            <table class="striped highlight" style="line-height:10px">
+                  <tr><td><h5>Body Products</h5></td></tr>
+                  <tr><td><a href="chip.html">&nbsp Chips</a></td></tr>
+                  <tr><td><a href="tc.html">&nbsp Chocolates</a></td></tr>
+                  <tr><td><a href="snack.html">&nbsp Daily Snacks</a></td></tr>
+                  <tr><td><a href="bisc.html">&nbsp Biscuits</a></td></tr>
+                  <tr><td><a href="ration.html">&nbsp Ration</a></td></tr>
+                  <tr><td><a href="pack.html">&nbsp Packed Stuff</a></td></tr>
+                  <tr><td><a href="other.html">&nbsp others</a></td></tr>
+            </table>
       </div>
+  </div><br>
 
+  <div class="row card">
 
       <div class="col m3 s12">
 
           <a href="eat-chips.html"><div class="card small">
-            <img src="C:\Users\laptop\Desktop\website\images\sale2.jpg" height="60%" width="100%">
+            <img src="images\sale2.jpg" height="60%" width="100%">
           <div class="card-content center">
-            <h align="center"><b>F O R <br> S A L E </b></h6>  
+            <h6 align="center"><b>F O R <br> S A L E </b></h6>  
           </div>
           </div></a>
 
@@ -260,24 +273,29 @@
 
       <div class="col m3 s12">
        
-          <h4>For Sale</h4><br>
-            <ul>
-                  <li><a href="chip.html">&nbsp Faceitems</a></li>
-                  <li><a href="tc.html">&nbsp Creams & Lotions</a></li>
-                  <li><a href="snack.html">&nbsp Hairitems</a></li>
-                  <li><a href="snack.html">&nbsp Oils </a></li>     
-            </ul>
+          <table class="striped highlight" style="line-height:10px">
+                  <tr><td><h5>For Sale</h5></td></tr>
+                  <tr><td><a href="chip.html">&nbsp Chips</a></td></tr>
+                  <tr><td><a href="tc.html">&nbsp Chocolates</a></td></tr>
+                  <tr><td><a href="snack.html">&nbsp Daily Snacks</a></td></tr>
+                  <tr><td><a href="bisc.html">&nbsp Biscuits</a></td></tr>
+                  <tr><td><a href="ration.html">&nbsp Ration</a></td></tr>
+                  <tr><td><a href="pack.html">&nbsp Packed Stuff</a></td></tr>
+                  <tr><td><a href="other.html">&nbsp others</a></td></tr>
+            </table>
+           
+          
       </div>
-  </div> 
+  </div>
+
 
   <br><br><br>
-
 </div>
 <!-- footer -->
-
-  <footer class="page-footer teal darken-3" style="margin-left:4%">
+</main>
+  <footer class="page-footer footer" style="background-color: #00897B;">
     <div class="row">
-      <div class="col s12 m6 l6 center">
+      <div class="col s12 m6">
         <h6 class="white-text">
           <address>
               An initative by:<br><br>
@@ -290,7 +308,7 @@
       </div>
       <div class="col right">
          <ul>
-           <li><a href="#" class="grey-text text-lighten-4 right">Help</a></li>
+           <li><a href="#" class="grey-text text-lighten-4 right">Help</a></li><br>
            <li><a href="contacts.html" class="grey-text text-lighten-4 right">Contact Us</a></li>
            <li><a href="#" class="grey-text text-lighten-4 right">Privacy and Terms</a></li>
            <li><a href="#" class="grey-text text-lighten-4 right">User Agreement</a></li>
@@ -308,7 +326,6 @@
 <!-- ////footer -->
 
 <!-- end -->
-</main>
 
 </body>
 </html>
