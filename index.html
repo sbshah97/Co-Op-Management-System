@@ -22,7 +22,7 @@
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
           <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Suez+One">
-          <link rel="stylesheet" href="css\flexslider.css" type="text/css">
+          <link rel="stylesheet" href="flexslider.css" type="text/css">
           <link rel="stylesheet" href="css\style.css">
           <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
           
@@ -33,7 +33,7 @@
 
 <!-- header  -->
 
-
+<header>
   <div class="navbar-fixed bg">
     <nav class="bg height">
       <div class="nav-wrapper">
@@ -56,7 +56,7 @@
       </form>
 
   </div>
-  
+</header>
 <!-- ////header -->
         
  
@@ -69,22 +69,22 @@
         <div class="background">
           <img src="images\nitkl.jpg" width="100%">
         </div>
-          <a href="https://www.nitk.ac.in">Nitk Surathkal&nbsp &nbsp &nbsp  &nbsp www.nitk.ac.in</a>
+          <a href="https://www.nitk.ac.in"><pre>Nitk Surathkal   www.nitk.ac.in</pre></a>
       </div>
-    </li>
-    <li><a href="#!" class="waves-effect">H O M E</a></li>
+
+    <li><a href="#!" class="waves-effect space">HOME</a></li>
     <li><div class="divider"></div></li>
-    <li><a href="createacc.html" class="waves-effect">C R E A T E &nbsp A C C O U N T</a></li>
+    <li><a href="createacc.html" class="waves-effect space">CREATE ACCOUNT</a></li>
     <li><div class="divider"></div></li>
-    <li><a href="signin.html" class="waves-effect">S I G N &nbsp I N</a></li>
+    <li><a href="signin.html" class="waves-effect space">SIGN IN</a></li>
     <li><div class="divider"></div></li>
-    <li><a href="categories.html" class="waves-effect">S H O P &nbsp N O W</a></li>
+    <li><a href="categories.html" class="waves-effect space">SHOP NOW</a></li>
     <li><div class="divider"></div></li>
-    <li><a href="#services" class="waves-effect">S E R V I C E S</a></li>
+    <li><a href="#services" class="waves-effect space">SERVICES</a></li>
     <li><div class="divider"></div></li>
-    <li><a href="contacts.html" class="waves-effect">C O N T A C T</a></li>
+    <li><a href="contacts.html" class="waves-effect space">CONTACT</a></li>
     <li><div class="divider"></div></li>
-    <li><a class="waves-effect" href="#!">H E L P</a></li>
+    <li><a class="waves-effect space" href="#!">HELP</a></li>
   </ul>
 
 <main>
@@ -112,10 +112,10 @@
             </div>
           </div>
           <div class="col s12 m6 right">
-               <div class="flexslider teal lighten-3">
+               <div class="flexslider teal lighten-3 z-depth-4 ">
                   <ul class="slides">
                     <li>
-                    <img src="images\nitkb.jpg" title="body products"/>
+                    <img src="images\sale2.jpg" title="items for sale" />
                     </li>
                     <li>
                     <img src="images\nitkf.jpg" title="food products" />
@@ -127,7 +127,7 @@
                     <img src="images\nitks.jpg" title="stationary" />
                     </li>
                     <li>
-                    <img src="images\sale2.jpg" title="items for sale" />
+                    <img src="images\nitkb.jpg" title="body products"/>
                     </li>
                   </ul>             
                </div>
@@ -136,7 +136,7 @@
   <br>
         <div class="row">
           <div class="col s12 m6">
-               <div class="flexslider">
+               <div class="flexslider z-depth-4 ">
                   <ul class="slides">
                     <li>
                     <img src="images\onlineshop.jpg" />
@@ -160,7 +160,7 @@
             <div class="card z-depth-5 div5">
               <div class="card-content black-text space">
                 <div class="card-title span1 black-text"><h4>Why Here?<br></h4></div>
-                <p>Did you ever feel the pain to go to the co-op realising that you need something important and urgently  ....Same Here <b>:(</b>
+                <p>Did you ever feel the pain to go to the co-operative shop realising that you need something important and urgently  ....Same Here <b>:(</b>
                 so you're good to go here</p>  
               </div>
             </div>
@@ -179,11 +179,11 @@
 <!-- card 02 -->
 
   <a name="services"></a>
-  <div class="row z-depth-2 center div4 container space" style="padding:20px 10% 20px 10%;">
+  <div class="row z-depth-2 center div4 container space servicepad">
     <div class="col s12 m4">
       <div class="card z-depth-4 black">
         <div class="card-content white-text">
-          <div class="card-title span1"><h4><i class="material-icons span1">store</i>What We Offer</h4></div>
+          <div class="card-title span1"><h4><i class="material-icons">store</i>What We Offer</h4></div>
           <br><p class="light">This service will allow you to buy anything from co-op society without going there.</p><br>
         </div>  
       </div>
@@ -192,7 +192,7 @@
       <div class="card z-depth-4 black">
         <div class="card-content white-text">
           <div class="card-title span1"><h4><i class="material-icons span1">shop</i>What To Do</h4></div>
-          <br><p class="light">You just have to select out what you ned to buy and simply pay and you're done.</p><br>
+          <br><p class="light">You just have to select out what you need to buy and simply pay.</p><br>
         </div>
       </div >
     </div>
@@ -214,12 +214,12 @@
 
 <!-- footer -->
 
-  <footer class="page-footer footer space" style="background-color: #00897B;">
-  <div class="container">
+  <footer class="page-footer footer space bg" style="background-color: #00897B;">
+  <div class="container"> <h5 class="grey-text text-lighten-4 space"><br>An Initiative By:</h5><br>
     <div class="row  grey-text text-lighten-4">
-      <div class="col s12 m10 l6">
+      <div class="col s12 m9 l6"><br>
           
-              <h5 class="span1"><br>An Initative By:</h5><br>
+             
               <i class="material-icons black-text div7">person_pin</i>
                   Salmaan Shah (mentor)<br>
                 
@@ -227,23 +227,23 @@
                   Hrishi Hiraskar (mentor)<br>
                   
               <i class="material-icons black-text div7">person_pin</i>
-                  Vanshika Gupta (team member)<br>
+                  Vanshika Gupta (member)<br>
                   
               <i class="material-icons black-text div7">person_pin</i>
-                  Sujith D Dixith (team member)<br><br>
+                  Sujith D Dixith (member)<br><br>
                  
       </div>
-      <div class="col s12 m2 right">
-         <ul><br><br><br>
-           <li><a href="help.html" class="grey-text text-lighten-4"><i class="material-icons black-text">help</i>Help</a></li>
+      <div class="col s12 m3 right">
+         <ul>
+           <li><a href="#" class="grey-text text-lighten-4"><i class="material-icons black-text">help</i>Help</a></li>
            <li><a href="contacts.html" class="grey-text text-lighten-4"><i class="material-icons black-text">contacts</i>Contact Us</a></li>
-           <li><a href="pt.html" class="grey-text text-lighten-4"><i class="material-icons black-text">security</i>Privacy and Terms</a></li>
-           <li><a href=".html" class="grey-text text-lighten-4"><i class="material-icons black-text">verified_user</i>User Agreement</a></li>
-         </ul><br><br> 
+           <li><a href="#" class="grey-text text-lighten-4"><i class="material-icons black-text">security</i>Privacy and Terms</a></li>
+           <li><a href="#" class="grey-text text-lighten-4"><i class="material-icons black-text">verified_user</i>User Agreement</a></li>
+         </ul>
       </div>  
     </div>
-    <div class="center">
-         <i class="material-icons mediumblack-text">room</i><br>
+    <div class="center grey-text text-lighten-4">
+         <i class="material-icons medium black-text">room</i><br>
            NITK-Coperative Society,<br>behind Nandini store,beside Girls Hostel<br>
            NITK, Surathkal, Mangalore - 575025<br>
            <a href="#" class="fa fa-facebook"></a>

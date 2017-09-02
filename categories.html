@@ -1,8 +1,9 @@
-<!DOCTYPE html>
 
+<!DOCTYPE html> 
 <html>
 <head>
-    <title>NITK COOPERATIVE SOCIETY | ONLINE DELIVERY</title>
+
+     <title>NITK COOPERATIVE SOCIETY | ONLINE DELIVERY</title>
 
           <meta charset="UTF-8">
           <meta name="viewport" content="width=device-width" initial-scale="1.0">
@@ -22,140 +23,96 @@
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
           <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Suez+One">
-          <link rel="stylesheet" href="css\flexslider.css" type="text/css">
+          <link rel="stylesheet" href="flexslider.css" type="text/css">
           <link rel="stylesheet" href="css\style.css">
           <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-
-          <style>
-            header, main, footer {
-                padding-left: 240px;
-               }
-
-           @media only screen and (max-width : 992px) {
-           header, main, footer {
-                padding-left: 0;
-               }
-            }
-          </style>
+          
 
 </head>
 
-<body id="back"> 
+<body id="back">
 
 <!-- header  -->
+
 <header>
   <div class="navbar-fixed bg">
-    <nav class="bg">
-      <a href="#" data-activates="nav-mobile" class="button-collapse top-nav full hide-on-large-only"><i class="material-icons">menu</i></a>
-      <form class="form2">
-          <div class="input-field center">
-          <input id="search" type="search" required>
-          <label class="label-icon" for="search">Search products here</label>
-          <i class="material-icons">close</i>
-          </div>
-        </form>
-        <ul class="hide-on-med-and-down">
+    <nav class="bg height">
+      <div class="nav-wrapper">
+      <a class="button-collapse left" href="#" data-activates="slide-out"><i class="material-icons">view_list</i></a>
+         <!-- <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a> -->
+         <h4 class="left hd space">NITK COOP </h4>
+        <div  id="dis"> <i class="material-icons" id="icon1">search</i> </div>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="index.html">Home</a></li>
           <li><a href="createacc.html">Create Account</a></li>
           <li><a href="signin.html">Sign In</a></li>
-          <li class="coll"><a href="shop.html" class="btn waves-effect waves-teal left">CART<i class="material-icons">shopping_cart</i></a></li>
+          <li class="coll"><a href="categories.html" class="btn waves-effect waves-teal left">SHOP NOW<i class="material-icons">shopping_cart</i></a></li>
         </ul>
+      </div>
     </nav>
+     <form class="form1">
+          <div class="input-field">
+          <input id="search" type="search" placeholder="&#x2315 Search.." onfocus="myfocus()" onblur="myblur()" required>
+          </div>
+      </form>
+
   </div>
-  
-
 </header>
+<!-- ////header -->
+        
+ 
 
-    
+<!-- side nav menu -->
+
+  <ul id="slide-out" class="side-nav">
+    <li class="white">
+      <div class="userView">
+        <div class="background">
+          <img src="images\nitkl.jpg" width="100%">
+        </div>
+          <a href="https://www.nitk.ac.in"><pre>Nitk Surathkal   www.nitk.ac.in</pre></a>
+      </div>
+
+    <li><a href="#!" class="waves-effect space">HOME</a></li>
+    <li><div class="divider"></div></li>
+    <li><a href="createacc.html" class="waves-effect space">CREATE ACCOUNT</a></li>
+    <li><div class="divider"></div></li>
+    <li><a href="signin.html" class="waves-effect space">SIGN IN</a></li>
+    <li><div class="divider"></div></li>
+    <li><a href="categories.html" class="waves-effect space">SHOP NOW</a></li>
+    <li><div class="divider"></div></li>
+    <li><a href="#services" class="waves-effect space">SERVICES</a></li>
+    <li><div class="divider"></div></li>
+    <li><a href="contacts.html" class="waves-effect space">CONTACT</a></li>
+    <li><div class="divider"></div></li>
+    <li><a class="waves-effect space" href="#!">HELP</a></li>
+  </ul>
+
+
 <header>
   <div class="navbar bg">
     <div class="z-depth-4 div1 top-nav nav-wrapper bg">
       <div class="row">
-        <div class="col m8 s12 bg">
-          <h3>Categories</h3>
+        <div class="col m8 s12 black-text">
+          <h4>Categories</h4>
         </div>
       </div>
     </div>
   </div>
 </header>
-  <!-- ////header -->
-
-<!-- side nav menu -->
-
-  <div class="container"></div>
-    <ul id="nav-mobile" class="side-nav fixed">
-	    <li class="white">
-         <div class="userView">
-         <div class="background">
-           <img src="images\nitkl.jpg" width="100%">
-         </div>
-         </div>
-      </li>
-	    <li class="bold z-depth-2 teal lighten-3"><a href="index.html" class="waves-effect waves-teal">HOME</a></li>
-      <li class="bold monospace"><br><h6>S H O P  &nbsp &nbspH E R E </h6><i class="material-icons">shopping_cart</i></li>
-      <li class="no-padding">
-          <ul class="collapsible collapsible-accordion teal lighten-3">
-              <li class="bold z-depth-1"><a class="collapsible-header coll waves-effect waves-grey"><b>E a t a b l e s</b></a>
-                <div class="collapsible-body">
-                <ul>
-                  <li><a href="eat-chips.html">&nbsp Chips</a></li>
-                  <li><a href="tc.html">&nbsp Chocolates</a></li>
-                  <li><a href="snack.html">&nbsp Daily Snacks</a></li>
-                  <li><a href="bisc.html">&nbsp Biscuits</a></li>
-                  <li><a href="ration.html">&nbsp Ration</a></li>
-                  <li><a href="pack.html">&nbsp Packed Stuff</a></li>
-                  <li><a href="other.html">&nbsp others</a></li>
-                </ul>
-                </div>
-              </li>
-  <br>
-			        <li class="bold z-depth-1" ><a class="collapsible-header coll waves-effect waves-teal"><b>S t a t i o n a r y</b></a>
-                <div class="collapsible-body">
-                <ul>
-                  <li><a href="chip.html">&nbsp Noting stuff</a></li>
-                  <li><a href="tc.html">&nbsp Pencil&Pen</a></li>
-                  <li><a href="snack.html">&nbsp Other items </a></li>
-                </ul>
-                </div>
-              </li>
-  <br>
-			        <li class="bold z-depth-1"><a class="collapsible-header coll waves-effect waves-teal"><b>D o m e s t i c&nbsp I t e m s</b></a>
-                <div class="collapsible-body">
-                <ul>
-                  <li><a href="chip.html">&nbsp Noting stuff</a></li>
-                  <li><a href="tc.html">&nbsp Pencil&Pen</a></li>
-                  <li><a href="snack.html">&nbsp Other items </a></li>
-                </ul>
-                </div>
-              </li>
-  <br>
-			        <li class="bold z-depth-1"><a class="collapsible-header coll waves-effect waves-teal"><b>B o d y &nbspP r o d u c t s</b></a>
-                <div class="collapsible-body">
-                <ul>
-                  <li><a href="chip.html">&nbsp Faceitems</a></li>
-                  <li><a href="tc.html">&nbsp Creams & Lotions</a></li>
-                  <li><a href="snack.html">&nbsp Hairitems</a></li>
-				          <li><a href="snack.html">&nbsp Oils </a></li>
-				          <li><a href="snack.html">&nbsp Body washs' </a></li>
-				          <li><a href="snack.html">&nbsp Perfumes & talc </a></li>
-				          <li><a href="snack.html">&nbsp Oils </a></li>
-				          <li><a href="snack.html">&nbsp accessories & others </a></li>		  
-                </ul>
-                </div>
-              </li>
-              </li>
-          </ul>
-    </ul>
 
 
+
+
+<main>
 <!-- ////side nav menu -->
+<br><br><br>
+<!-- center image -->
 
-	<br><br>
-  
+  <div class="div3"><img src="images\nitk(2).jpg" id="backimg" width="100%" style="display: none"></div>
 
-<!-- main body -->
 
-<main><div class="container">
+  <div class="container">
 
   <div class="row card">
       
@@ -299,16 +256,18 @@
   </div>
 
 
-  <br><br><br>
-</div>
+ <br><br><br>
+ </main>
+ 
+
 <!-- footer -->
-</main>
-   <footer class="page-footer footer space" style="background-color: #00897B;">
-  <div class="container">
-    <div class="row">
-      <div class="col s12 m9 l6 white-text">
+
+  <footer class="page-footer footer space bg" style="background-color: #00897B;">
+  <div class="container"> <h5 class="grey-text text-lighten-4 space"><br>An Initiative By:</h5><br>
+    <div class="row  grey-text text-lighten-4">
+      <div class="col s12 m9 l6"><br>
           
-              <h5 class="span1"><br>An Initative By:</h5><br>
+             
               <i class="material-icons black-text div7">person_pin</i>
                   Salmaan Shah (mentor)<br>
                 
@@ -316,22 +275,22 @@
                   Hrishi Hiraskar (mentor)<br>
                   
               <i class="material-icons black-text div7">person_pin</i>
-                  Vanshika Gupta (team member)<br>
+                  Vanshika Gupta (member)<br>
                   
               <i class="material-icons black-text div7">person_pin</i>
-                  Sujith D Dixith (team member)<br><br>
+                  Sujith D Dixith (member)<br><br>
                  
       </div>
       <div class="col s12 m3 right">
-         <ul class="grey-text text-lighten-4"><br><br><br>
-           <li><a href="help.html"><i class="material-icons black-text">help</i>Help</a></li>
-           <li><a href="contacts.html"><i class="material-icons black-text">contacts</i>Contact Us</a></li>
-           <li><a href="pt.html"><i class="material-icons black-text">security</i>Privacy and Terms</a></li>
-           <li><a href=".html"><i class="material-icons black-text">verified_user</i>User Agreement</a></li>
-         </ul><br><br> 
+         <ul>
+           <li><a href="#" class="grey-text text-lighten-4"><i class="material-icons black-text">help</i>Help</a></li>
+           <li><a href="contacts.html" class="grey-text text-lighten-4"><i class="material-icons black-text">contacts</i>Contact Us</a></li>
+           <li><a href="#" class="grey-text text-lighten-4"><i class="material-icons black-text">security</i>Privacy and Terms</a></li>
+           <li><a href="#" class="grey-text text-lighten-4"><i class="material-icons black-text">verified_user</i>User Agreement</a></li>
+         </ul>
       </div>  
     </div>
-    <div class="center">
+    <div class="center grey-text text-lighten-4">
          <i class="material-icons medium black-text">room</i><br>
            NITK-Coperative Society,<br>behind Nandini store,beside Girls Hostel<br>
            NITK, Surathkal, Mangalore - 575025<br>
@@ -349,24 +308,11 @@
     </div> 
 
   </footer>
-
 <!-- ////footer -->
 
-<!-- script -->
+<script src="js\main.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 
-    <script>
-        $( document ).ready(function(){})
-    </script>
-    <script>
-        // Initialize collapse button
-        $(".button-collapse").sideNav();
-        // Initialize collapsible (uncomment the line below if you use the dropdown variation)
-        //$('.collapsible').collapsible();
-    </script>
-
-<!-- ///script -->
-
-<!-- end -->
 
 </body>
 </html>
