@@ -1,0 +1,212 @@
+
+<!DOCTYPE html>
+<head>
+       <title>NITK COOPERATIVE SOCIETY | ONLINE DELIVERY</title>
+       <meta charset="UTF-8">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+       <link rel="stylesheet" href="style.css">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>           
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script> 
+       <meta name="viewport" content="width=device-width" initial-scale="1.0">
+       <meta name="description" content="online coop service nitk">
+       <meta name="keywords" content="nitk online coop">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+
+       <!-- favicon -->
+       <link rel="icon" href="C:\Users\laptop\Desktop\website\favicon.ico" type="image/x-icon" />
+       <link rel="shortcut icon" href="C:\Users\laptop\Desktop\website\favicon.ico" type="image/x-icon" />
+
+</head>
+<body id="back">
+
+<!-- header -->
+
+<div class="navbar-fixed teal darken-3">
+    <nav class="teal darken-3" style="height:11%">
+      <div class="nav-wrapper">
+       <a class="button-collapse left" href="#" data-activates="slide-out"><i class="material-icons" style="color:#f2f2f2;">view_list</i></a>
+        <form class="form1">
+          <div class="input-field">
+          <input id="search" type="search" required>
+          <label class="label-icon" for="search">Search for products here</label>
+          <i class="material-icons">close</i>
+          </div>
+        </form>
+        <ul class="right hide-on-med-and-down">
+          <li class="teal darken-4"><a href="createacc.html" class="active">Create Account</a></li>
+          <li><a href="signin.html">Sign In</a></li>
+          <li style="padding:10px"><a href="shop.html" class="btn waves-effect waves-teal left">SHOP NOW<i class="material-icons">shopping_cart</i></a></li>
+        </ul>
+        <ul class="side-nav" id="mobile-demo">
+          <li><a href="createacc.html">Create Account</a></li>
+          <li><a href="signin.html">Sign In</a></li>
+          <li style="padding:10px"><a href="shop.html" class="btn waves-effect waves-teal left">SHOP NOW<i class="material-icons">shopping_cart</i></a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <script>
+    $( document ).ready(function(){})
+  </script>
+
+<!-- ////header -->
+        
+  <div class="navbar">
+    <div class="z-depth-4 div1 nav-wrapper" >
+      <div class="row">
+        <div class="col m8 s12">
+          <h3>NITK COOP SERVICE</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- side nav menu -->
+
+  <ul id="slide-out" class="side-nav">
+    <li class="white">
+      <div class="userView">
+        <div class="background">
+          <img src="images\nitkl.jpg" width="100%">
+        </div>
+          <a href="https://www.nitk.ac.in">Nitk Surathkal&nbsp &nbsp &nbsp  &nbsp www.nitk.ac.in</a>
+      </div>
+    </li>
+    <li><a href="nit.html" class="waves-effect">H O M E</a></li>
+    <li><div class="divider"></div></li>
+    <li class="teal lighten-4"><a href="#" class="waves-effect active">C R E A T E &nbsp A C C O U N T</a></li>
+    <li><div class="divider"></div></li>
+    <li><a href="signin.html" class="waves-effect">S I G N &nbsp I N</a></li>
+    <li><div class="divider"></div></li>
+    <li><a href="shop.html" class="waves-effect">S H O P &nbsp N O W</a></li>
+    <li><div class="divider"></div></li>
+    <li><a href="#services" class="waves-effect">S E R V I C E S</a></li>
+    <li><div class="divider"></div></li>
+    <li><a href="contacts.html" class="waves-effect">C O N T A C T</a></li>
+    <li><div class="divider"></div></li>
+    <li><a class="waves-effect" href="#!">H E L P</a></li>
+  </ul>
+<script>
+     $('.button-collapse').sideNav({
+            menuWidth: 300, // Default is 300
+            edge: 'left', // Choose the horizontal origin
+            closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+            draggable: true // Choose whether you can drag to open on touch screens
+          }
+          );
+</script>
+<style>
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+</style>
+<script>
+var app = angular.module('myApp', []);
+app.controller('customersCtrl', function($scope) {
+
+});
+</script>     
+  <br><br><br><br>
+
+
+  <div ng-app="myApp" ng-controller="customersCtrl" class="container">
+    <div class="row"> 
+      <div class="col s12 m6"> 
+      <form action="/action_page.php" name="fm"><h3 style="font-family: monisapce"><i class="material-icons prefix medium">account_circle</i>Sign In</h3>
+      <div class="row">
+        <div class="input-field col s6 m6">
+          <input id="first_name" type="text" class="validate" required>
+          <label for="first_name">First Name*</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="last_name" type="text" class="validate">
+          <label for="last_name">Last Name</label>
+        </div>
+      </div>
+      <div class="row">
+            <div class="input-field col s6">
+          <input id="first_name" type="text" class="validate" required>
+          <label for="first_name">UserName*</label>
+            </div>
+      </div>
+      <div class="row">
+            <div class="input-field col s6">
+          <input id="password" type="password" class="validate" name="pswd1" ng-model="p1" required>
+          <label for="password">password*</label>
+            </div>
+      </div> 
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="password" type="password" class="validate" name="pswd2" ng-model="p2" required>
+          <label for="password"> Re-enter Password*</label>
+        </div><div ng-show="p1!=p2 && fm.pswd2.$dirty"><h6 class="red-text">the passwords dont match</h6></div>
+      </div>
+      <div class="row">
+            <div class="input-field col s6">
+          <input id="tel" type="tel" maxlength="10" class="validate" required> 
+          <label for="tel">mobile no.*</label>
+            </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="email" type="email" class="validate" required>
+          <label for="email">Email*</label>
+        </div>
+      </div>*required
+    </form>
+    <input type="submit" value="Submit" ng-disabled="p1!=p2"> 
+        <br><br><br><br>
+        Already Have An Account..<a href="signin.html">Sign In </a><br><br><br>
+    </div><img class="right img-responsive" src="images\createcollll.jpg" width="350" height="700" style="margin-right:10%;">
+    </div></div>
+  <br>
+
+<!-- footer -->
+
+  <footer class="page-footer teal darken-3 footer">
+    <div class="row">
+      <div class="col s12 m6 l6">
+        <h6 class="white-text">
+          <address>
+              An initative by:.<br><br>
+              Salmaan Shah(mentor)<br> 
+              Hrishi Hiraskar(mentor)<br>
+              Vanshika Gupta(team member)<br>
+              Sujith D Dixith(team member)<br>
+          </address>
+        </h6>
+      </div>
+      <div class="col right">
+         <ul>
+           <li><a href="#" class="grey-text text-lighten-4 right">Help</a></li><br>
+           <li><a href="contacts.html" class="grey-text text-lighten-4 right">Contact Us</a></li>
+           <li><a href="#" class="grey-text text-lighten-4 right">Privacy and Terms</a></li>
+           <li><a href="#" class="grey-text text-lighten-4 right">User Agreement</a></li>
+         </ul>
+      </div>
+    </div>
+    <div class="footer-copyright">
+       <div class="container">
+        © 2016 Copyright Information
+       <a class="grey-text text-lighten-4 right" href="#!">Links</a>
+       </div>
+    </div>         
+  </footer>
+<!-- /////footer -->
+
+</body>
+</html>

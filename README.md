@@ -1,46 +1,22 @@
-# Co-Op-Management-System
+# NITK Co-Op Management System
 
-## References
-* [W3Schools](https://www.w3schools.com/) - HTML, CSS, JavaScript, BootStrap
-* [Materialize CSS](http://materializecss.com/) - Library to use for designing.
+## TO CREATE AN ONLINE SHOPPING FACILITY FOR THE COOPERATIVE SOCIETY OF NITK
 
-## Aim 
-* To build an online system that helps us to buy, pay and order things from the Co-Op Society.
-* The idea is to transform the coop into an online shopping market. 
-* The app will let us know as to what is available in the co-op and what is not. 
-* So we don’t have to search out for things out there and waste our time to go till there and find that the item we wish to purchase is available or not!
+## Problem statement:
+Finding an alternative to the existing system of cooperative society and making it more efficient for everyone.
 
-## About
-- A simple web app used to book buy/sell stuff.
-- **Back-End**: Ruby on Rails/ Django
-- **Front-End**: HTML, CSS and JavaScript
-- **Database**: SQLite/ Firebase
+## Abstract:
+* In the era of digitalization a successful consumer store requires a facility that will bring up more costumers to their stores, which is possible if it is able to provide an extra comfort to its upcoming customers. Other than good quality and reasonable prices, what if people could save their time and energy too.
+* When people want things pertaining to their daily needs in a given frame of time, there is no option other than reaching the store itself, which is a tedious job. Also the online shopping stores cannot provide us that facility and that too in a given time bound. Along with that what if there is a small queue awaiting you at the store and you are in a hurry. Also, what if you don’t know the approximate amount that  you will need to purchase the thing that you wish. 
+* So the solution and our main idea is to provide to the students, staffs and residents  of NITK an online shopping and delivery facility linked with the girls as well as the boys cooperative society of NITK  which will decrease the stress of their tedious schedule and provide them with things of their daily use that they wish to purchase at their doorsteps and that too in a limited time.
+* The things that will help us achieve the aim of the problem is a real time app in addition to a  website that will let us know the prices as well as the availability of the items that we wish to purchase rather than reaching to the co-op and finding out that the item is not actually available. Also we will have a delivery system that will provide them with the service just at their doorsteps with both cash on delivery as well as online payments through their accounts with us.So people can select the items that they wish to purchase and just buy and get it delivered too. 
 
-## Installation
-- Fork this project to your GitHub account.
-- After forking, enter the following commands in your terminal.
-```bash
-git clone https://github.com/[your user_name]/Co-Op-Management-System
-cd Co-Op-Management-System
-```
+## Timeline:
+<To be flled>
 
-## Contributing
-- Kindly check the [`CONTRIBUTING`](https://github.com/salman-bhai/Co-Op-Management-System/blob/master/CONTRIBUTING) to know more about how to contribute towards further developing this website.
-- The repository is open to contribution from all interested developers. Kindly send us Pull Requests with explanation as to what changes you have done.
-- Also, you can write to us by opening an [Issue](https://github.com/salman-bhai/Co-Op-Management-System/issues) and also solve a current issue if possible.
-- A detailed explanantion of how we came to building this software is maintained at the [Wiki](https://github.com/salman-bhai/Co-Op-Management-System/wiki) page.
-- This repository was created and currently maintained by @[salman-bhai](https://github.com/salman-bhai).
+## Project Member
+* Vanshika Gupta (2nd Year Civil)
 
-## Concepts to be learned: 
-* Website Designing, HTML, CSS, Javascript
-* Backend: Django/ RoR
- 
-## Final output: 
-* Online CoOp
-* Delivery system
-
-## Team members:
-* Salman Shah (Mentor)
-* Hrishikesh Hiraskar (Mentor) 
-* Vanshika Gupta (Team Member)
-* Sujith D Dixith (Team Member)
+## Project Guide
+* Salman Shah (3rd Year IT)
+* Hrishi Hiraskar (3rd Year CS)
