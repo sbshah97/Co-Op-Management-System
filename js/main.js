@@ -14,38 +14,38 @@ $('.button-collapse').sideNav({
 
 
 if ( $(window).width() > 993) {  
- document.getElementById("search").style.display="block";
- document.getElementById("search").style.marginLeft="33%";
- document.getElementById("backimg").style.height="40vw";
-} 
-else {
- document.getElementById("dis").style.display="block";
- document.getElementById("backimg").style.height="70vw";
-}
+   document.getElementById("search").style.display="block";
+   document.getElementById("search").style.marginLeft="33%";
+   document.getElementById("backimg").style.height="40vw";
+  } 
+ else {
+   document.getElementById("dis").style.display="block";
+   document.getElementById("backimg").style.height="70vw";
+ }
 
-$("#icon1").click(function(){
-  $("#search").fadeToggle("2000");
-  document.getElementById("search").focus();
-});
+    $("#icon1").click(function(){
+        $("#search").fadeToggle("2000");
+        document.getElementById("search").focus();
+    });
 
 function myfocus(){
-  if ( $(window).width() > 993) {  
-    document.getElementById("search").style.border="2px solid #ccc";
-    document.getElementById("search").style.backgroundColor="white";
+if ( $(window).width() > 993) {  
+  document.getElementById("search").style.border="2px solid #ccc";
+  document.getElementById("search").style.backgroundColor="white";
   } 
-  else {
-    document.getElementById("search").style.width= "100%" ;
-    document.getElementById("search").style.border="2px solid #ccc";
-    document.getElementById("search").style.backgroundColor="white";}
-  }
-
+ else {
+  document.getElementById("search").style.width= "100%" ;
+  document.getElementById("search").style.border="2px solid #ccc";
+  document.getElementById("search").style.backgroundColor="white";}
+}
+ 
 function myblur(){
-  if ( $(window).width() > 993) {  
-    document.getElementById("search").style.border="1px solid #ccc";
-    document.getElementById("search").style.backgroundColor="#00897B";} 
-  else {
-    document.getElementById("search").style.display="none"}
-  }
+if ( $(window).width() > 993) {  
+  document.getElementById("search").style.border="1px solid #ccc";
+  document.getElementById("search").style.backgroundColor="#00897B";} 
+else {
+  document.getElementById("search").style.display="none"}
+}
 
 
 
