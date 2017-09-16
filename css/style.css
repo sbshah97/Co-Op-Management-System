@@ -1,6 +1,5 @@
 #back{
-  background-color:#ECEFF1;
-  }
+  background-color:#ECEFF1;}
 .bg{
   background-color: #00897B;}
 .div0{
@@ -54,7 +53,9 @@
     display: inline-flex;
     vertical-align: top;
 }
-
+.lineheight{
+  line-height:10px;
+}
 .form2{
   width:45%;
   float:left;
@@ -71,6 +72,8 @@
   font-family:'Suez One', serif;
   margin-left:15%;
   color:#E0F7FA ;}
+.navpad{
+    padding-top:10px;}
 .light{
   font-weight: lighter;}
 .space{
@@ -78,7 +81,7 @@
 .margin{
    margin-top:20px;}
 .height{
-  height:10%;}
+  height:11%;}
 .footer{
   background-color: #00897B;}
 .fa {
@@ -112,6 +115,22 @@
   float:right;
   padding-top:15px;}
 
+
 /*<script>
     $( document ).ready(function(){})
   </script>*/
+
+  input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
