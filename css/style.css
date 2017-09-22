@@ -1,7 +1,7 @@
 #back{
   background-color:#ECEFF1;}
 .bg{
-  background-color: #00897B;}
+  background-color: #00897B !important;}
 .div0{
   background-color:#00695C;
   width:100%;
@@ -120,17 +120,4 @@
     $( document ).ready(function(){})
   </script>*/
 
-  input[type=submit] {
-    width: 100%;
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-input[type=submit]:hover {
-    background-color: #45a049;
-}
+ 
