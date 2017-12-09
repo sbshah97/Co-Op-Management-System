@@ -1,0 +1,36 @@
+{
+  "name": "OAuthProject",
+  "version": "0.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.6.0",
+    "bcrypt": "^1.0.3",
+    "body-parser": "latest",
+    "connect-flash": "~0.1.1",
+    "cookie-parser": "latest",
+    "ejs": "latest",
+    "express": "~4.12.3",
+    "express-flash": "0.0.2",
+    "express-session": "^1.15.6",
+    "form-data": "^2.3.1",
+    "jquery-validation": "^1.17.0",
+    "mongoose": "^4.12.4",
+    "mongoose-type-email": "^1.0.5",
+    "morgan": "~1.5.2",
+    "nodemailer": "^4.4.0",
+    "passport": "~0.2.1",
+    "passport-facebook": "^2.1.1",
+    "passport-google-oauth": "^1.0.0",
+    "passport-local": "~1.0.0",
+    "sweetalert": "^2.0.8"
+  },
+  "devDependencies": {
+    "@types/node": "^8.0.47"
+  }
+}
