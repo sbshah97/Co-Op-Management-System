@@ -14,6 +14,14 @@
   margin-top:25px;}
 .div2{
   margin-top:25px;}
+.slides li{
+  overflow:hidden;
+}
+.slides li img{
+  position:relative;
+  left:50%;
+  transform:translateX(-50%);
+}
 .div3{
   text-align:center;
   color:white; 
@@ -24,8 +32,6 @@
   background-color:#CFD8DC}
 .div6{
   background-color:#08234f}
-.span1{
-  font-family: monisapce;}
 .div7{
   margin-left:12%;}
 .form1{
@@ -33,7 +39,7 @@
   }
 #search{
   position:fixed;
-  padding-left:2px;
+  padding-left:10px;
   width:30%;
   box-sizing: border-box;
   border-radius: 4px;
@@ -72,7 +78,7 @@
   margin-left:15%;
   color:#E0F7FA ;}
 .navpad{
-    padding-top:10px;}
+  padding-top:10px;}
 .light{
   font-weight: lighter;}
 .space{
@@ -83,15 +89,32 @@
   height:11%;}
 .footer{
   background-color: #00897B;}
-
 .servicepad{
-  padding:20px 10% 20px 10%;
-}
+  padding:20px 10% 20px 10%;}
 #dis{
   display:none;
   float:right;
   padding-top:15px;}
-
+.item_name{
+  font-weight:bold;
+  letter-spacing: 1px;
+}
+.fa{
+  font-size:25px;
+  font-weight:bold;
+}
+.margin10{
+  margin-top:5px;
+}
+.margin70{
+  margin-top:70px;
+}
+.pad30{
+  padding:30px;
+}
+.borderleft{
+  border-left: 1px solid grey;
+}
 
 /*<script>
     $( document ).ready(function(){})

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>MY CART | NITK ONLINE COOP</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" initial-scale="1.0">
+    <meta name="description" content="online coop service nitk">
+    <meta name="keywords" content="nitk online coop">
+
+    <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/todostyle.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Acme|Amatic+SC:700" rel="stylesheet">
+</head>
+<body>
+
+
+    <a href="javascript:history.back()"><i class="material-icons white-text">arrow_back</i></a><br><br>
+
+
+    <% if(messages.success){ %>
+    <div class="card-panel blue lighten-4 black-text text-darken-4"><%= messages.success %></div>
+    <% } %>
+
+    <% if(messages.error){ %>
+    <div class="card-panel red lighten-4 red-text text-darken-4"><%= messages.error %></div>
+    <% } %>
+    
+    <div id="todo-table">
+        <h3 class="acme">Hi! <%= user.local.firstname %><br>Here's your personalised Cart <i class="material-icons white-text medium">shopping_cart</i></h3><br>
+        <ul>
+            <li>
+            <span class="teal-text text-accent-4">ITEM NAME & PRICE</span>
+            <span class="teal-text text-accent-4 right">QUANTITY</span>
+            <% if(!todos.length) { %>
+            <li class="amatic"><h5>OOPS! your cart is empty :P</h5></li>
+            <% } %>
+            <%todos.forEach(item => {%>
+            <li id="delete">
+            <span class="first"><%= item.item %></span>
+            <span class="second right"><%= item.quantity %></span>
+            <span class="third"><%= item.price %></span>
+            </li>
+            <% });%>
+        </ul>
+        <br><br>
+    </div>
+    <% if(todos.length) { %>
+    <div class="row">
+
+        <a href="/enterOTP"><button class="btn waves-effect waves-light buynow" id="buy" type="submit">BUY NOW
+        </button></a>
+    </div>
+    <% } %><br><br><br>
+
+
+
+</div>
+
+
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>           
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script> 
+<script src="/assets/js/jquery.flexslider.js"></script>
+<script src="/assets/js/main.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="/assets/js/todo-list.js"></script>
+<script>
+  $('#textarea1').trigger('autoresize');
+</script>
+
+</script>
+</script>
+</body>
+</html>

@@ -50,3 +50,12 @@ function myblur(){
   }
 }
 
+    $("#search").on("keyup", function() {
+    var g = $(this).val().toLowerCase();
+    $("#items #me #she .item_name").each(function() {
+        var s = $(this).text().toLowerCase();
+        $(this).closest('#items')[ s.indexOf(g) !== -1 ? 'show' : 'hide' ]();
+    });
+})
+  
+

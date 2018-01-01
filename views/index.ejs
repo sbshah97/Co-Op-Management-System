@@ -65,10 +65,14 @@
 		<div class="card-panel blue lighten-4 black-text text-darken-4"><%= messages.success %></div>
 	    <% } %>
 
+	    <% if(messages.info){ %>
+		<div class="card-panel green lighten-4 black-text text-darken-4"><%= messages.info %></div>
+	    <% } %>
+
 
 		<div class="row coll container">
 			<div class="col s12 m6 white">
-				<h4 class="black-text thicker"><i class="material-icons grey-text text-darken-1 medium">person_pin</i>Sign In<br></h4>
+				<h4 class="black-text thicker"><i class="material-icons grey-text text-darken-1 medium">person_pin</i>Log In or Sign Up<br></h4>
 		        <div class="row coll">
                    <a href="/login" class="waves-effect waves-light btn col s12">
                     Login in</a>
@@ -79,7 +83,17 @@
                 </div><br><br><br>
 			</div>
 			<div class="col s12 m6">
-				<img src="/assets/images/collage.jpg" height="350px" width="100%">
+				<ol style="list-style-type:disc;">
+				<h4>Important Info before you sign up</h4>
+				<li>The email adress you give will be used for reset password incase you forget your password</li>
+				<li>Most importantly, the mobile no. you provide will be used to send confirmation OTP for each order you place</li>
+				<li>Once the imfo is entered, it cannot be changed.</li>
+				<li>Provide full address with room no. and block or hous no. at the time of placing order eg. Room no. 237 Girls Hostel 3</li>
+				<li>You will have to come at the blok gate to take your order</li>
+				<li>If you feel you dont want something after you have placed the order, we will take it back but it wont be removed from your previous purchase orders.</li>
+				<li>All deliveries will be paid by cash only. Alternate methods will be informed as they are started.</li>
+				<li>Please avoid spam orders and fake signups</li>  
+				</ol>
 			</div><br>
 		</div>
 

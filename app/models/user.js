@@ -9,8 +9,11 @@ var userSchema = mongoose.Schema({
         lastname: String,
 		telephone: String,
 		resetPasswordToken:String,
-		resetPasswordExpires: Date
-	}
+		resetPasswordExpires: Date,
+		orderOTP:String,
+		orderOTPExpires: Date,
+		orderList:[{item_no:String , item_name: String, item_quantity:Number ,item_price: Number}]
+	},
 });
 
 userSchema.methods.generateHash = function(password){

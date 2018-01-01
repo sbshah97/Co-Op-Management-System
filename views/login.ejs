@@ -47,11 +47,13 @@
 				<a href="https://www.nitk.ac.in" class="center">Nitk Surathkal</a>
 			</div>
 		</li>
-		<li><a href="signin.html" class="waves-effect space">SIGN IN</a></li>
+		<li><a href="/login" class="waves-effect space">LOG IN</a></li>
 		<li><div class="divider"></div></li>
-		<li><a href="contacts.html" class="waves-effect space">CONTACT</a></li>
+		<li><a href="/signup" class="waves-effect space">SIGN UP</a></li>
 		<li><div class="divider"></div></li>
-		<li><a class="waves-effect space" href="#!">HELP</a></li>
+		<li><a href="/contact" class="waves-effect space">CONTACT</a></li>
+		<li><div class="divider"></div></li>
+		<li><a class="waves-effect space" href="/help">HELP</a></li>
 	</ul>
 	<!-- ////side nav menu -->
 
@@ -78,24 +80,24 @@
 
 		<div class="row coll container">
 			<div class="col s12 m6 teal lighten-4">
-				<h4 class="black-text span1"><i class="material-icons grey-text text-darken-1 medium">person_pin</i>Sign In<br></h4>
+				<h4 class="black-text thicker"><i class="material-icons grey-text text-darken-3 medium">person_pin</i>Log In<br></h4>
 				<form action="/login" method="post" class="coll">
 					<div class="input-field">
 						<input name="email" type="text" class="validate">
-						<label for="email">Username</label>
+						<label for="email">Username(email)</label>
 					</div>
 					<div class="input-field">
 						<input name="password" type="password" class="validate">
-						<label for="password">Phone number</label>
+						<label for="password">Password</label>
 					</div>
 						<button class="btn waves-effect waves-light" type="submit" name="action">Log In
 							<i class="material-icons right">send</i>
 						</button>
-				</form><br>
+				</form>
 
 				<p>Need an account? <a href="/signup">Signup</a></p>
-				<p>Or go <a href="/">home</a>.</p><br><br>
-				<a href="/forgot">forgot password?</a>
+				<p>Or go <a href="/">home</a>.</p>
+				<p class="right"><a href="/forgot">forgot password?</a></p>
 			</div>
 			<div class="col s12 m6">
 				<img src="/assets/images/collage.jpg" height="350px" width="100%">

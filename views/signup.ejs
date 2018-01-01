@@ -48,9 +48,13 @@
 			</div>
 		</li>
 		<li><div class="divider"></div></li>
-		<li><a href="#!" class="waves-effect space">CONTACT</a></li>
+		<li><a href="/login" class="waves-effect space">LOG IN</a></li>
 		<li><div class="divider"></div></li>
-		<li><a class="waves-effect space" href="#!">HELP</a></li>
+		<li><a href="/signup" class="waves-effect space">SIGN UP</a></li>
+		<li><div class="divider"></div></li>
+		<li><a href="/contact" class="waves-effect space">CONTACT</a></li>
+		<li><div class="divider"></div></li>
+		<li><a class="waves-effect space" href="/help">HELP</a></li>
 	</ul>
 	<!-- ////side nav menu -->
 
@@ -71,7 +75,7 @@
 			<div class="row"> 
 				<div class="col s12 m6 teal lighten-4"> 
 					<form action="/signup" method="post">
-						<h4 class="span1"><i class="material-icons prefix medium grey-text text-darken-1">account_circle</i>Sign Up</h4>
+						<h4 class="thicker"><i class="material-icons prefix medium grey-text text-darken-1">account_circle</i>Sign Up</h4>
 						<div class="row">
 							<div class="input-field col s6">
 								<input type="text" name="firstname" class="validate" required>
@@ -84,28 +88,28 @@
 						</div>
 						<div class="row">
 							<div class="input-field col s12">
-								<input type="password" class="validate" name="password" required>
+								<input type="password" class="validate" name="password" minlength="4" required>
 								<label>password*</label>
 							</div>
 						</div> 
 						<div class="row">
 							<div class="input-field col s12">
-								<input name="telephone" type="tel" maxlength="10" class="validate" required> 
-								<label>Telephone</label>
+								<input name="telephone" type="tel" maxlength="12" class="validate" required> 
+								<label>Telephone*(eg. 919935397676)</label>
 							</div>
 						</div>
 						<div class="row">
 							<div class="input-field col s12">
 								<input name="email" type="email" class="validate" required>
-								<label>Email*</label>
+								<label>Email*(your username)</label>
 							</div>
-						</div>*required
+						</div><br>
 						<button class="btn waves-effect waves-light" type="submit">SIGN UP
 							<i class="material-icons right">send</i>
 						</button>
 					</form>
-					<br><br><br>
-					Already Have An Account..<a href="/login">Login In </a><br><br>
+					<br>
+					Already Have An Account? <a href="/login">Login In </a><br>Or go<a href="/"> home </a> <br>
 				</div>
 				<div class="col s12 m5"><img src="/assets/images/buysell.jpg" width="100%">
 				</div>
