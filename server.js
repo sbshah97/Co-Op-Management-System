@@ -1,6 +1,8 @@
 var express = require('express');
 var app = express();
 var port = process.env.PORT || 8080;
+var todoController = require('./controllers/todo-controller');
+
 
 var cookieParser = require('cookie-parser');
 var session = require('express-session');
@@ -11,6 +13,7 @@ var passport = require('passport');
 var flash = require('express-flash');
 var async = require('async');
 var crypto = require('crypto');
+
 
 var configDB = require('./config/database.js');
 mongoose.connect(configDB.url);
@@ -27,6 +30,10 @@ app.use(session({secret: 'anystringoftext',
 app.use(passport.initialize());
 app.use(passport.session()); // persistent login sessions
 app.use(flash()); // use connect-flash for flash messages stored in session
+
+
+
+
 
 
 

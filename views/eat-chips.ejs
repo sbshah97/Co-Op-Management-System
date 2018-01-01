@@ -20,9 +20,9 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 
-   </head>
+  </head>
 
-   <body id="back">
+  <body id="back">
 
     <!-- header  -->
     <% include partials/buyheader.ejs %>
@@ -34,8 +34,8 @@
       <div class="navbar bg">
         <div class="z-depth-4 div1 top-nav nav-wrapper bg">
           <div class="row">
-            <div class="col m8 s12 black-text">
-              <h4>Chips</h4>
+            <div class="col m8 s12" style="color:#E0F7FA ;">
+              <h4 class="thicker space">CHIPS</h4>
             </div>
           </div>
         </div>
@@ -55,14 +55,15 @@
          </div>
        </div>
      </li>
-     <li class="teal lighten-3"><a href="index.html" class="waves-effect waves-teal">HOME</a></li>
-     <li class="teal lighten-4"><a href="index.html" class="waves-effect waves-teal">MY CART<i class="material-icons medium right">shopping_cart</i></a></li>
-     <li class="space"><pre>S H O P H E R E<i class="material-icons">shopping_basket</i></pre></li>
+     <li class="teal lighten-3"><a href="/home" class="waves-effect waves-teal">HOME</a></li>
+     <li class="teal lighten-3"><a href="/categories" class="waves-effect waves-teal">CATEGORIES</a></li>
+     <li class="teal lighten-4"><a href="/todo" class="waves-effect waves-teal">MY CART<i class="material-icons medium right">shopping_cart</i></a></li>
+     <li class="space"><pre>S H O P H E R E<i class="material-icons grey-text text-darken-3">shopping_basket</i></pre></li>
      <li class="no-padding teal lighten-3">
       <ul class="collapsible collapsible-accordion teal lighten-3">
         <li class="space teal lighten-3" style="padding-top:10px;"><a class="collapsible-header active waves-effect waves">Eatables</a>
           <ul class="collapsible-body">
-            <li class="cyan lighten-5"><a href="shop.html" class="active">Chips</a></li>
+            <li class="cyan lighten-5"><a href="/eat-chips" class="active">Chips</a></li>
             <li><a href="tc.html">Chocolates</a></li>
             <li><a href="snack.html">Daily Snacks</a></li>
             <li><a href="bisc.html">Biscuits</a></li>
@@ -85,14 +86,17 @@
         <li class="space" style="padding-top:10px;"><a class="collapsible-header waves-effect waves-teal">Domestic Items</a>
           <div class="collapsible-body">
             <ul>
-              <li><a href="chip.html">Noting stuff</a></li>
-              <li><a href="tc.html">Pencil Pen</a></li>
-              <li><a href="snack.html">Other items </a></li>
+              <li><a href="chip.html">Cleaning</a></li>
+              <li><a href="tc.html">Sanitary</a></li>
+              <li><a href="tc.html">Storage</a></li>
+              <li><a href="tc.html">Bathroom</a></li>
+              <li><a href="tc.html">Utensils</a></li>
+              <li><a href="snack.html">Other items</a></li>
             </ul>
           </div>
         </li>
         <br>
-        <li class="space" style="padding-top:10px;"><a coll class="collapsible-header waves-effect waves-teal">Body Products</a>
+        <li class="space" style="padding-top:10px;"><a class="collapsible-header waves-effect waves-teal">Body Products</a>
           <div class="collapsible-body">
             <ul>
               <li><a href="chip.html">Faceitems</a></li>
@@ -106,6 +110,7 @@
             </ul>
           </div>
         </li>
+        <li class="space thicker" style="padding-top:10px;"><a class="collapsible-header waves-effect waves-teal" href="/logout">LOGOUT</a></li>
       </ul>
     </ul>
 
@@ -122,9 +127,31 @@
       <!-- ///center image -->
 
 
+      <div class="row container">
+        <%chips.forEach(chip => {%>
 
-     
+        <div class="col m4" id="items">
+          <div class="card-panel" id="me">
+            <center><img class="responsive-img" src="/assets/images/laysr.jpg"></center>
+            <div class="card-content" id="she">
+              <div class="divider"></div>
+              <div class="chip margin10">item info</div>
+              <span class="item_name"><%= chip.name %></span><br>
+              <div class="chip margin10">quantity left</div>
+              <span class="quantity_left orange-text"><%= chip.quantity_left %></span><br>
+              <div class="chip margin10">Price</div>
+              <span class="item_price orange-text"><%= chip.price %></span><br>
+              <span class="item_no white-text"><%= chip.index %></span>
+              <a class="chip right waves-effect waves-light teal accent-4" id="clicktoadd">Add to cart</a>
+              <br>
+            </div>
+          </div>
+        </div>
 
+        <% });%>
+      </div>
+
+    
     </main>
 
     <!-- footer -->
@@ -137,6 +164,8 @@
     <script src="/assets/js/jquery.flexslider.js"></script>
     <script src="/assets/js/main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="/assets/js/todo-list.js"></script>
+    
 
-   </body>
-   </html>
+  </body>
+  </html>
