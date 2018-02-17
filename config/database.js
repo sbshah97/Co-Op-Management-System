@@ -1,5 +1,5 @@
 module.exports = {
-	'url'	: 'mongodb://localhost:27017/iamno8'
+	'url'	: 'mongodb://mongo/co-op'
 }
 
-
+// mongodb://salman-bhai:co-op@ds239988.mlab.com:39988/co-op
