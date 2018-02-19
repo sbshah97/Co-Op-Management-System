@@ -8,7 +8,7 @@ var bodyParser = require('body-parser');
 var data = [{item: "Get milk",quantity:2}, {item: "Walk dog",quantity:1}, {item: "Eat dinner",quantity:2}];
 var urlencodedParser = bodyParser.urlencoded({ extended: false });
 var MongoClient = require('mongodb').MongoClient;
-var url = 'mongodb://localhost:27017/items';
+var url = 'mongodb://mongo/items';
 
 
 // This functions returns to the call in app.js or rather it exports to the line of code where it is required in app.js
