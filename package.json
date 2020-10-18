@@ -22,7 +22,7 @@
     "jquery-validation": "^1.17.0",
     "mongoose": "^5.7.5",
     "mongoose-type-email": "^1.0.13",
-    "morgan": "~1.5.2",
+    "morgan": "~1.9.1",
     "nodemailer": "^4.4.0",
     "passport": "~0.4.1",
     "passport-facebook": "^3.0.0",
