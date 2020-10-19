@@ -18,7 +18,7 @@
     "express": "~4.17.1",
     "express-flash": "0.0.2",
     "express-session": "^1.15.6",
-    "form-data": "^2.3.1",
+    "form-data": "^3.0.0",
     "jquery-validation": "^1.17.0",
     "mongoose": "^5.10.9",
     "mongoose-type-email": "^1.0.13",
