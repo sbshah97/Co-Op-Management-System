@@ -20,7 +20,7 @@
     "express-session": "^1.15.6",
     "form-data": "^3.0.0",
     "jquery-validation": "^1.19.0",
-    "mongoose": "^5.10.10",
+    "mongoose": "^5.13.3",
     "mongoose-type-email": "^1.0.13",
     "morgan": "~1.10.0",
     "nodemailer": "^6.4.14",
