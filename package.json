@@ -32,6 +32,6 @@
     "sweetalert": "^2.1.2"
   },
   "devDependencies": {
-    "@types/node": "^14.14.2"
+    "@types/node": "^16.4.0"
   }
 }
